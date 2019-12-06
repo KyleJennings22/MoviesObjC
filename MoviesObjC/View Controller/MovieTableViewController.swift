@@ -42,6 +42,7 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // casting our cell as our custom MovieTableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieTableViewCell else {return UITableViewCell()}
 
         // grabbing the movie from the index
