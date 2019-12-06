@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		279D1B95239AB2F70071F686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279D1B94239AB2F70071F686 /* AppDelegate.m */; };
 		279D1B98239AB2F70071F686 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279D1B97239AB2F70071F686 /* SceneDelegate.m */; };
-		279D1B9B239AB2F70071F686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279D1B9A239AB2F70071F686 /* ViewController.m */; };
 		279D1B9E239AB2F70071F686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279D1B9C239AB2F70071F686 /* Main.storyboard */; };
 		279D1BA0239AB2F80071F686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279D1B9F239AB2F80071F686 /* Assets.xcassets */; };
 		279D1BA3239AB2F80071F686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279D1BA1239AB2F80071F686 /* LaunchScreen.storyboard */; };
 		279D1BA6239AB2F80071F686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 279D1BA5239AB2F80071F686 /* main.m */; };
+		279D1BB2239AB4260071F686 /* KPJMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 279D1BB1239AB4260071F686 /* KPJMovie.m */; };
+		279D1BB5239AB4F20071F686 /* KPJMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279D1BB4239AB4F20071F686 /* KPJMovieController.m */; };
+		279D1BB8239ABC120071F686 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D1BB7239ABC120071F686 /* MovieTableViewController.swift */; };
+		279D1BBA239ABC410071F686 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D1BB9239ABC410071F686 /* MovieTableViewCell.swift */; };
+		279D1BBC239AC61C0071F686 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D1BBB239AC61C0071F686 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +26,19 @@
 		279D1B94239AB2F70071F686 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		279D1B96239AB2F70071F686 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		279D1B97239AB2F70071F686 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		279D1B99239AB2F70071F686 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		279D1B9A239AB2F70071F686 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		279D1B9D239AB2F70071F686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		279D1B9F239AB2F80071F686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279D1BA2239AB2F80071F686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		279D1BA4239AB2F80071F686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279D1BA5239AB2F80071F686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		279D1BB0239AB4260071F686 /* KPJMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPJMovie.h; sourceTree = "<group>"; };
+		279D1BB1239AB4260071F686 /* KPJMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPJMovie.m; sourceTree = "<group>"; };
+		279D1BB3239AB4F20071F686 /* KPJMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPJMovieController.h; sourceTree = "<group>"; };
+		279D1BB4239AB4F20071F686 /* KPJMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPJMovieController.m; sourceTree = "<group>"; };
+		279D1BB6239ABC120071F686 /* MoviesObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoviesObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		279D1BB7239ABC120071F686 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		279D1BB9239ABC410071F686 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		279D1BBB239AC61C0071F686 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +71,57 @@
 		279D1B92239AB2F70071F686 /* MoviesObjC */ = {
 			isa = PBXGroup;
 			children = (
+				279D1BAF239AB3710071F686 /* View Controller */,
+				279D1BAE239AB3650071F686 /* Model Controller */,
+				279D1BAD239AB35C0071F686 /* Model */,
+				279D1BAC239AB3460071F686 /* Resources */,
+				279D1B9C239AB2F70071F686 /* Main.storyboard */,
+			);
+			path = MoviesObjC;
+			sourceTree = "<group>";
+		};
+		279D1BAC239AB3460071F686 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				279D1B93239AB2F70071F686 /* AppDelegate.h */,
 				279D1B94239AB2F70071F686 /* AppDelegate.m */,
 				279D1B96239AB2F70071F686 /* SceneDelegate.h */,
 				279D1B97239AB2F70071F686 /* SceneDelegate.m */,
-				279D1B99239AB2F70071F686 /* ViewController.h */,
-				279D1B9A239AB2F70071F686 /* ViewController.m */,
-				279D1B9C239AB2F70071F686 /* Main.storyboard */,
 				279D1B9F239AB2F80071F686 /* Assets.xcassets */,
 				279D1BA1239AB2F80071F686 /* LaunchScreen.storyboard */,
 				279D1BA4239AB2F80071F686 /* Info.plist */,
 				279D1BA5239AB2F80071F686 /* main.m */,
 			);
-			path = MoviesObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		279D1BAD239AB35C0071F686 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				279D1BB0239AB4260071F686 /* KPJMovie.h */,
+				279D1BB1239AB4260071F686 /* KPJMovie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		279D1BAE239AB3650071F686 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				279D1BB3239AB4F20071F686 /* KPJMovieController.h */,
+				279D1BB4239AB4F20071F686 /* KPJMovieController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		279D1BAF239AB3710071F686 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				279D1BB7239ABC120071F686 /* MovieTableViewController.swift */,
+				279D1BB6239ABC120071F686 /* MoviesObjC-Bridging-Header.h */,
+				279D1BB9239ABC410071F686 /* MovieTableViewCell.swift */,
+				279D1BBB239AC61C0071F686 /* MovieDetailViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,11 +150,13 @@
 		279D1B88239AB2F70071F686 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KPJ;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Kyle Jennings";
 				TargetAttributes = {
 					279D1B8F239AB2F70071F686 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -146,9 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279D1B9B239AB2F70071F686 /* ViewController.m in Sources */,
 				279D1B95239AB2F70071F686 /* AppDelegate.m in Sources */,
 				279D1BA6239AB2F80071F686 /* main.m in Sources */,
+				279D1BBA239ABC410071F686 /* MovieTableViewCell.swift in Sources */,
+				279D1BB8239ABC120071F686 /* MovieTableViewController.swift in Sources */,
+				279D1BBC239AC61C0071F686 /* MovieDetailViewController.swift in Sources */,
+				279D1BB2239AB4260071F686 /* KPJMovie.m in Sources */,
+				279D1BB5239AB4F20071F686 /* KPJMovieController.m in Sources */,
 				279D1B98239AB2F70071F686 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,15 +343,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGTDUJVMMT;
-				INFOPLIST_FILE = MoviesObjC/Info.plist;
+				INFOPLIST_FILE = MoviesObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylejennings.MoviesObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoviesObjC/View Controller/MoviesObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,15 +364,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGTDUJVMMT;
-				INFOPLIST_FILE = MoviesObjC/Info.plist;
+				INFOPLIST_FILE = MoviesObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylejennings.MoviesObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoviesObjC/View Controller/MoviesObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
