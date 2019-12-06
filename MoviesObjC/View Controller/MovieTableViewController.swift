@@ -54,6 +54,7 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
             favoriteIsOn = true
             favoritesBarButtonItem.title = "Cancel"
         }
+        // going to the top of the tableview when the favorites button is tapped
         tableView.setContentOffset(.zero, animated: true)
     }
     
