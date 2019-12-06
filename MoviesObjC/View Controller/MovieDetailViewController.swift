@@ -33,6 +33,7 @@ class MovieDetailViewController: UIViewController {
         // in case the view hasn't loaded yet
         loadViewIfNeeded()
         guard let movie = movie else {return}
+        title = movie.title
         KPJMovieController.fetchPoster(from: movie) { (image) in
             // need to be on the main queue
             DispatchQueue.main.async {
