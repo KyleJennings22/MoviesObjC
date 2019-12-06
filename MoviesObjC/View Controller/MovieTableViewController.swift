@@ -60,6 +60,10 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
         KPJMovieController.fetchMovies(fromSearchTerm: searchText) { (results) in
             self.movies = results
         }
+        // getting rid of keyboard after searching
+        searchBar.resignFirstResponder()
+        // resetting the searchBar text after searching
+        searchBar.text = ""
     }
     
     // MARK: - Navigation
