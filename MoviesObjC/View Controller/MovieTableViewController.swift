@@ -54,6 +54,7 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
             favoriteIsOn = true
             favoritesBarButtonItem.title = "Cancel"
         }
+        tableView.setContentOffset(.zero, animated: true)
     }
     
     // MARK: - Table view data source
