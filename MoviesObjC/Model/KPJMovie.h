@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KPJMovie : NSObject
 // setting the properties necessary to update the tableview
 @property (nonatomic, copy, readonly) NSString *title;
-@property (nonatomic, readonly) NSNumber *rating;
+@property (nonatomic, readonly, copy) NSNumber *rating;
 @property (nonatomic, copy, readonly) NSString *overview;
 @property (nonatomic, copy, readonly) NSString *posterPath;
 

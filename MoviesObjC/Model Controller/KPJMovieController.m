@@ -30,7 +30,7 @@ static NSString *const imageURLString = @"http://image.tmdb.org/t/p/w500/";
     urlComponents.queryItems = @[apiQueryItem, querySearch];
     NSURL *finalURL = urlComponents.URL;
     
-//    NSLog(@"URL: %@",finalURL.absoluteString);
+    //    NSLog(@"URL: %@",finalURL.absoluteString);
     [[NSURLSession.sharedSession dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         // handling the error
         if (error)
@@ -66,7 +66,7 @@ static NSString *const imageURLString = @"http://image.tmdb.org/t/p/w500/";
             // adding the movie to the movieArray
             [movieArray addObject:movie];
         }
- //       NSLog(@"MOVIES: %@", movieArray);
+        //       NSLog(@"MOVIES: %@", movieArray);
         // completing with the array of movies
         return completion(movieArray);
         
@@ -74,31 +74,35 @@ static NSString *const imageURLString = @"http://image.tmdb.org/t/p/w500/";
 }
 
 
-+ (void)fetchPosterFromMovie:(KPJMovie *)movie completion:(void (^)(UIImage * _Nonnull))completion
++ (void)fetchPosterFromMovie:(KPJMovie *)movie completion:(void (^)(UIImage * _Nullable))completion
 {
     // need a separate URL for fetching posters
     NSURL *baseURL = [NSURL URLWithString:imageURLString];
-    NSURL *finalURL = [baseURL URLByAppendingPathComponent:movie.posterPath];
-    
-    [[NSURLSession.sharedSession dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error)
-        {
-            NSLog(@"Error\nIn %s: %@\n---\n%@", __PRETTY_FUNCTION__, error.localizedDescription, error);
-            return completion([UIImage new]);
-        }
+    if (![movie.posterPath isKindOfClass:[NSNull class]])
+    {
+        NSURL *finalURL = [baseURL URLByAppendingPathComponent:movie.posterPath];
         
-        if (!data)
-        {
-            NSLog(@"No Data");
-            return completion([UIImage new]);
-        }
-        
-        // luckily images are easy because they have the handy imageWithData method, using the data to create the image
-        UIImage *poster = [UIImage imageWithData:data];
-        
-        //returning the image
-        return completion(poster);
-    }]resume];
+        [[NSURLSession.sharedSession dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            if (error)
+            {
+                NSLog(@"Error\nIn %s: %@\n---\n%@", __PRETTY_FUNCTION__, error.localizedDescription, error);
+                return completion(nil);
+            }
+            
+            if (!data)
+            {
+                NSLog(@"No Data");
+                return completion(nil);
+            }
+            
+            // luckily images are easy because they have the handy imageWithData method, using the data to create the image
+            UIImage *poster = [UIImage imageWithData:data];
+            
+            //returning the image
+            return completion(poster);
+        }]resume];
+    }
+    return completion(nil);
 }
 
 @end

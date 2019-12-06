@@ -21,10 +21,10 @@ static NSString *const posterPathKey = @"poster_path";
     self = [super init];
     if (self)
     {
-        _title = title;
-        _rating = rating;
-        _overview = overview;
-        _posterPath = posterPath;
+        _title = [title copy];
+        _rating = [rating copy];
+        _overview = [overview copy];
+        _posterPath = [posterPath copy];
     }
     return self;
 }

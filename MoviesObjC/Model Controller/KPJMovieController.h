@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)fetchMoviesFromSearchTerm: (NSString *)searchTerm completion: (void (^) (NSArray<KPJMovie *> *))completion;
 
 // also need to fetch a poster from a separate url
-+ (void)fetchPosterFromMovie: (KPJMovie *)movie completion: (void (^) (UIImage *))completion;
++ (void)fetchPosterFromMovie: (KPJMovie *)movie completion: (void (^) (UIImage *_Nullable))completion;
 
 @end
 

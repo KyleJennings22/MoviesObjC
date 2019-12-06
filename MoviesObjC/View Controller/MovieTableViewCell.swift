@@ -27,6 +27,7 @@ class MovieTableViewCell: UITableViewCell {
     func updateViews() {
         guard let movie = movie else {return}
         KPJMovieController.fetchPoster(from: movie) { (image) in
+            guard let image = image else {return}
             DispatchQueue.main.async {
                 self.posterImageView.image = image
             }
