@@ -82,8 +82,15 @@
                             <outlet property="delegate" destination="S1c-TV-CRo" id="Q8a-KR-36K"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Movie Search" id="cIb-k1-K5T"/>
+                    <navigationItem key="navigationItem" title="Movie Search" id="cIb-k1-K5T">
+                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="YQQ-Gw-392">
+                            <connections>
+                                <action selector="favoritesButtonTapped:" destination="S1c-TV-CRo" id="qUT-mi-dBy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="favoritesBarButtonItem" destination="YQQ-Gw-392" id="43N-d6-g1I"/>
                         <outlet property="searchBar" destination="KMs-Ep-ga0" id="Qa4-8n-QPA"/>
                     </connections>
                 </tableViewController>
